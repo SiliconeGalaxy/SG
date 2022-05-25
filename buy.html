@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>BUY NOW</title>
+			<!-- Latest Bootstrap min CSS -->
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<style>
+		.welcome-area {
+			position: relative;
+			height: 700px;
+			background:#041237;
+		}
+		.welcome-area:before{
+		background: rgba(0, 0, 0, 0.5);
+			content: "";
+			height: 100%;
+			filter: alpha(opacity=80);
+			position: absolute;
+			width: 100%;
+		}
+		.hero-text{
+		background: rgba(255,255,255,0.8);
+		padding:60px;
+		margin-top:200px;
+		}
+		.hero-text h1 {
+		color: #35ac39;
+		font-size: 60px;
+		font-weight: 500;
+		line-height: 70px;
+		margin-bottom:60px;
+		position: relative;
+		text-transform: capitalize;
+		}
+		.back-home{
+		background:#f54291;
+		border: 2px solid #f54291;
+		border-radius: 500px;
+		color: #fff;
+		font-weight: 600;
+		position: relative;
+		margin: 15px 15px 0;
+		padding: 12px 36px;
+		text-transform: uppercase;
+		transition: all 0.2s ease 0s;
+		}
+		.back-home:hover,
+		.back-home:focus {
+			background: #7564e5;
+			color: #fff;
+			border: 2px solid #7564e5;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="welcome-area"  style="background-image: url(assets/img/bg/static-bg.jpg);  background-size:cover; background-position: center center;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 col-sm-12 col-xs-12 text-center">
+					<div class="hero-text">
+						<h1>BUY NOW</h1>
+			<p> SEND BNB TO THIS ADDRESS AND RECEIVE LNX ON THE SAME ADDRESS </p>
+			<p> <b>0x764288f3561c8ef8eCd33C9169631d8086CD3eb8</b></p>
+						<img src="assets/img/qr.png"  alt="" />
+				<input type="text" value="0x764288f3561c8ef8eCd33C9169631d8086CD3eb8" id="myInput">
+<button onclick="myFunction()">Copy Address</button>
+
+<script>
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the address ");
+}
+</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- Latest jQuery -->
+		<script src="assets/js/jquery-1.12.4.min.js"></script>
+		<!-- Latest compiled and minified Bootstrap -->
+			<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
